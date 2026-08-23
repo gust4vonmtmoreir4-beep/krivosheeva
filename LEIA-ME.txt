@@ -1,0 +1,19 @@
+KRIVOSHEEVA CONSULTORIA — HOSTINGER
+
+1. No hPanel, abra Sites > Gerenciar > Arquivos > Gerenciador de Arquivos.
+2. Entre na pasta public_html.
+3. Faça backup e APAGUE da public_html o index.html antigo, a pasta assets antiga e o .htaccess antigo.
+4. Envie este ZIP e extraia o conteúdo diretamente em public_html.
+5. Confirme que index.html, .htaccess, robots.txt e a pasta assets estejam diretamente em public_html — sem uma pasta intermediária.
+6. No hPanel, abra Desempenho > Cache Manager e clique em Limpar cache.
+7. Abra o domínio em uma janela anônima. A primeira dobra deve aparecer centralizada, com o símbolo Krivosheeva e uma animação geométrica sutil atrás dele.
+
+IMPORTANTE — ESTA VERSÃO V8 USA NOMES NOVOS PARA CSS E JAVASCRIPT.
+Depois da extração, confirme que existem estes dois arquivos:
+- assets/styles-krivosheeva-v8.css
+- assets/app-krivosheeva-v8.js
+
+Para confirmar a atualização, abra no navegador:
+https://SEU-DOMINIO/VERSAO-CACHE-V8.txt
+
+Esta versão é totalmente estática e não precisa de Node.js, banco de dados ou instalação via npm.

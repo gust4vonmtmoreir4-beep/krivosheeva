@@ -1,0 +1,4 @@
+VERSÃO HOSTINGER V8 — CABEÇALHO LIGHT
+CSS: styles-krivosheeva-v8.css
+JS: app-krivosheeva-v8.js
+AJUSTES: Poppins Light aplicada ao menu, idiomas, botão de contato e demais elementos textuais do cabeçalho.
