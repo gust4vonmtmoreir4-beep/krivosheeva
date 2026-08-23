@@ -1,0 +1,14 @@
+KRIVOSHEEVA CONSULTORIA — GITHUB PAGES
+
+Esta edição não utiliza a pasta assets. Todos os arquivos devem ficar juntos na raiz do repositório.
+
+1. Exclua do repositório o index.html antigo.
+2. Clique em Add file > Upload files.
+3. Selecione TODOS os arquivos extraídos deste ZIP e envie-os de uma só vez.
+4. Clique em Commit changes.
+5. Aguarde a publicação e abra:
+   https://gust4vonmtmoreir4-beep.github.io/krivosheeva/
+6. Se necessário, atualize usando Ctrl + F5.
+
+Para confirmar a edição correta, abra:
+https://gust4vonmtmoreir4-beep.github.io/krivosheeva/VERSAO-GITHUB-PAGES.txt
