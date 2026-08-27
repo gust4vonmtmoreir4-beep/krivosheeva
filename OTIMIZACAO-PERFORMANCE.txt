@@ -1,8 +1,10 @@
-Otimizações aplicadas:
-- PNGs de conteúdo convertidos para WebP, reduzindo drasticamente o peso das imagens.
-- Imagens não utilizadas removidas do site.
-- Logo e símbolo do hero recebem prioridade de carregamento.
-- Removido o bloqueio visual causado por body.static-loading, que atrasava o primeiro paint até o JavaScript terminar.
-- Cache de longo prazo configurado para WebP/JPEG/SVG no .htaccess.
-- Renderização de seções abaixo da dobra adiada com content-visibility.
-- Open Graph convertido para JPEG otimizado.
+Otimizações aplicadas (v9):
+1. HTML pré-renderizado: o conteúdo em português já vem pronto no index.html
+   (antes a página era 100% montada por JavaScript, atrasando o LCP).
+2. CSS crítico embutido em <style> — elimina 1 requisição bloqueante de 58 KB.
+3. Google Fonts carregado de forma assíncrona (preload + onload), sem bloquear a renderização.
+4. O JS detecta o HTML pré-renderizado (data-prerendered) e apenas ativa as
+   interações, evitando re-renderizar tudo no carregamento.
+5. Compressão gzip/brotli habilitada no .htaccess.
+Observação: ao editar textos em app-krivosheeva-v8.js, gere novamente o HTML
+pré-renderizado dentro de <div id="app" data-prerendered="pt"> no index.html.

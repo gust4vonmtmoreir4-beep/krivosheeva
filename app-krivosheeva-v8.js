@@ -196,4 +196,12 @@ function initReveals() {
   elements.forEach((element) => revealObserver.observe(element));
 }
 
-render();
+const prerendered = document.getElementById("app");
+if (prerendered && prerendered.dataset.prerendered === language) {
+  delete prerendered.dataset.prerendered;
+  bindInteractions();
+  initReveals();
+  document.body.classList.remove("static-loading");
+} else {
+  render();
+}
