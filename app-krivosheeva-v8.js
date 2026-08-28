@@ -72,9 +72,6 @@ function render() {
         <div class="hero-grid">
           <div class="hero-copy">
             <div class="hero-logo-stage hero-enter hero-enter-one">
-              <span class="hero-logo-orbit hero-logo-orbit-outer" aria-hidden="true"></span>
-              <span class="hero-logo-orbit hero-logo-orbit-inner" aria-hidden="true"></span>
-              <span class="hero-logo-glow" aria-hidden="true"></span>
               <img src="krivosheeva-symbol-v6.webp" alt="${escapeHtml(t.hero.emblemLabel)}" width="430" height="441" fetchpriority="high">
             </div>
             <div class="hero-signature hero-enter hero-enter-two">
