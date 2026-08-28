@@ -71,23 +71,23 @@ function render() {
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-grid">
           <div class="hero-copy">
-            <div class="hero-logo-stage hero-enter hero-enter-one">
+            <div class="hero-logo-stage">
               <img src="krivosheeva-symbol-v6.webp" alt="${escapeHtml(t.hero.emblemLabel)}" width="430" height="441" fetchpriority="high">
             </div>
-            <div class="hero-signature hero-enter hero-enter-two">
+            <div class="hero-signature">
               <p class="hero-brand-name">KRIVOSHEEVA CONSULTORIA</p>
               <p class="hero-bridge-tagline">Strategic Bridge Between China and Brazil</p>
             </div>
-            <h1 id="hero-title" class="hero-enter hero-enter-three">${formatHeroTitle(t.hero.title, language)}</h1>
-            <p class="hero-intro hero-enter hero-enter-four">${escapeHtml(t.hero.intro)}</p>
-            <div class="hero-actions hero-enter hero-enter-four">
+            <h1 id="hero-title">${formatHeroTitle(t.hero.title, language)}</h1>
+            <p class="hero-intro">${escapeHtml(t.hero.intro)}</p>
+            <div class="hero-actions">
               <a class="button button-gold whatsapp-button" href="${whatsapp}" target="_blank" rel="noreferrer">${whatsappIcon()}${escapeHtml(t.hero.action)} <span>↗</span></a>
               <a class="text-link" href="#servicos">${escapeHtml(t.hero.link)} <span>↓</span></a>
             </div>
           </div>
         </div>
 
-        <div class="hero-facts hero-enter hero-enter-four" aria-label="${escapeHtml(t.hero.factsLabel)}">
+        <div class="hero-facts" aria-label="${escapeHtml(t.hero.factsLabel)}">
           ${t.hero.facts.map(([label, value]) => `<div><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`).join("")}
         </div>
       </section>

@@ -1718,14 +1718,6 @@ footer > a:last-child {
   transform: translateY(0);
 }
 
-.hero-enter {
-  animation: heroReveal 900ms cubic-bezier(0.2, 0.72, 0.2, 1) both;
-}
-
-.hero-enter-one { animation-delay: 80ms; }
-.hero-enter-two { animation-delay: 180ms; }
-.hero-enter-three { animation-delay: 310ms; }
-.hero-enter-four { animation-delay: 440ms; }
 
 .mobile-menu[open] nav {
   animation: menuDrop 220ms ease both;
@@ -1751,8 +1743,6 @@ footer > a:last-child {
   width: 1px;
 }
 
-@keyframes heroReveal {
-  from { clip-path: inset(0 0 100% 0); filter: blur(8px); opacity: 0; transform: translateY(34px); }
   to { clip-path: inset(0 0 0 0); filter: blur(0); opacity: 1; transform: translateY(0); }
 }
 
